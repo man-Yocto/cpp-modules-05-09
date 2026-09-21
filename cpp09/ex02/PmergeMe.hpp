@@ -19,15 +19,14 @@ public:
 	static int	nbr_of_comps;
 
 private:
-	void	fordJohnsonVector(std::vector<int>& elements, int groupSize);
+	void	fordJohnsonVector(std::vector<int>& elements);
 	int		binaryInsertVector(std::vector<int>& main, int value, int boundIndex);
 
-	void	fordJohnsonList(std::list<int>& elements, int groupSize);
+	void	fordJohnsonList(std::list<int>& elements);
 	std::list<int>::iterator	binaryInsertList(std::list<int>& main,
 				int value, std::list<int>::iterator boundIt);
 
-	std::vector<int>	computeJacobsthalSequence(int upperBound);
-	bool		compare(int a, int b);
+	bool	compare(int a, int b);
 };
 
 #endif
