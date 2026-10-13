@@ -1,0 +1,28 @@
+# Build artifacts
+*.o
+*.d
+a.out
+
+# Exercise binaries
+cpp05/ex00/Bureaucrat
+cpp05/ex01/Bureaucrat
+cpp05/ex02/forms
+cpp05/ex03/interns
+cpp06/ex00/convert
+cpp06/ex01/serializer
+cpp06/ex02/identify
+cpp07/ex00/whatever
+cpp07/ex01/iter_test
+cpp07/ex02/array_test
+cpp08/ex00/ex00
+cpp08/ex01/ex01
+cpp08/ex02/ex02
+cpp09/ex00/btc
+cpp09/ex01/RPN
+cpp09/ex02/PmergeMe
+
+# Editors / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store

@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build every exercise
+        run: |
+          for mk in $(find . -name Makefile | sort); do
+            echo "::group::$(dirname "$mk")"
+            make -C "$(dirname "$mk")"
+            echo "::endgroup::"
+          done
